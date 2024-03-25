@@ -43,7 +43,7 @@ lpath = os.path.dirname(os.path.realpath(__file__))
 sys.path.append(lpath)
 
 if len(sys.argv) > 1 and sys.argv[1] != "-h":
-    ee.Initialize()
+    ee.Initialize(project='ee-leikuny101')
 
 # Set a custom log formatter
 logging.basicConfig(
