@@ -43,7 +43,7 @@ lpath = os.path.dirname(os.path.realpath(__file__))
 sys.path.append(lpath)
 
 if len(sys.argv) > 1 and sys.argv[1] != "-h":
-    ee.Initialize(project='ee-leikuny101')
+    ee.Initialize(project='ee-leikuny101') # need to change project ot your cloud project name
 
 # Set a custom log formatter
 logging.basicConfig(
