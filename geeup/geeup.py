@@ -311,7 +311,7 @@ def quota(project):
     else:
         print(ee.data.getAssetRoots())
         for roots in ee.data.getAssetRoots():
-            print('roots': roots)
+            print('roots: ', roots)
             quota = ee.data.getAssetRootQuota(roots["id"])
             print("")
             print(
