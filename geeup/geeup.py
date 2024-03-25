@@ -43,8 +43,7 @@ lpath = os.path.dirname(os.path.realpath(__file__))
 sys.path.append(lpath)
 
 if len(sys.argv) > 1 and sys.argv[1] != "-h":
-    ee.Initialize(project='projects/earthengine-legacy') # need to change project if you want to use cloud project
-
+    ee.Initialize()
 # Set a custom log formatter
 logging.basicConfig(
     level=logging.INFO, format="[%(asctime)s] %(message)s", datefmt="%Y-%m-%d %H:%M:%S"
