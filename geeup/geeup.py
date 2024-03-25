@@ -309,7 +309,9 @@ def quota(project):
         except Exception as e:
             logging.exception(e)
     else:
+        print(ee.data.getAssetRoots())
         for roots in ee.data.getAssetRoots():
+            print('roots': roots)
             quota = ee.data.getAssetRootQuota(roots["id"])
             print("")
             print(
